@@ -20,11 +20,11 @@ on:
 jobs:
     # START Basic Checks Job (code sniffer, images check, etc.)
     basic-checks:
-        runs-on: ubuntu-20.04
+        runs-on: ubuntu-24.04
         strategy:
             matrix:
                 include:
-                    - php: '7.1'
+                    - php: '7.4'
                       db: "none"
                       NOTESTS: 1
 
